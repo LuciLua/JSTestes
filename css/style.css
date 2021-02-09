@@ -197,22 +197,32 @@ h5{
 }
 
 .mark{
-    width: 90%;
     height: 600px;
     padding: 20px;
-    background-color: rgb(17, 17, 17);
-    margin-left: auto;
-    margin-right: auto;
+    background-color: rgb(0, 0, 0);
     position: relative;
     text-align: center;
-    display: flex;
+}
+@font-face{
+    font-family: font2;
+    font-weight: 800;
+    src: url(https://assets.vercel.com/raw/upload/v1587415301/fonts/2/inter-var-latin.woff2);
+}
+.botoes{
+    position: relative;
+    text-align: center;
 }
 
+#dev{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: font2;
+    position: relative;
+}
 .btn{
     width: 170px;
     height: 50px;
-    position: relative;
-    margin-right: 20px;
+    outline: none;
 }
 
 #btn-1{
@@ -288,9 +298,9 @@ h5{
 button{
     width: 90px;
     height: 90px;
-    background-color: rgb(152, 225, 155);
+    background-color: rgb(75, 75, 75);
     border-radius: 56px;
-    border: 2px solid rgb(152, 225, 155);
+    border: 2px solid rgb(75, 75, 75);
 }
 
 .badge{
@@ -346,15 +356,6 @@ h3{
     background-color: rgb(133, 35, 35) ;
 }
 
-.ck1{
-    width: 20px;
-    height: 20px;
-}
-
-.ck1:active{
-    filter: blur(2px);
-}
-
 .screen{
     background-color: rgb(232, 31, 31);
     height: 300px;
@@ -363,13 +364,17 @@ h3{
     position: relative;
 }
 
-.curve{
-    text-align: center;
+#btn6{
     position: relative;
-    float: left;
-    width: 50%;
-    height: 294px;
-    background-color: rgb(225, 64, 64);
-    border: rgb(225, 64, 64) 3px solid;
-    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    font-family: font2;
+    text-transform: uppercase;
+    margin-right: auto;
+    margin-left: auto;
+    
+}
+
+.div-cent{
+    text-align: center;
 }
