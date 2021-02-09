@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.cab{
+    max-width: 100%;
+    min-width: 100%;
+    height: 60px;
+    background-color: rgb(16, 16, 16);
+    box-shadow: black 0px 0px 10px;
+    margin: 0px;
+    padding: 0;
+    border: 0;
+    position: relative;
+}
+
+.menu{
+    position: relative;
+    background-color: transparent;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30px;
+    top: 15px;
+}
+
+@font-face{
+    src: url(/fonts/Raleway-Black.ttf);
+    font-family: font1;
+}
+.menu-op, #a{
+    overflow: hidden;
+    font-size: 20px;
+    font-family: font1;
+    display: inline;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px;
+    position: relative;
+}
+
+#a{
+    margin-left: 60px;
+}
+
+@media only screen and (max-width: 600px){
+    
+.menu-op, #a{
+font-size: 18px;
+margin-right: 6px;
+margin-left: 6px;
+text-align: center;
+
+text-align: center;
+}
+
+.menu{
+text-align: center;
+top: 15px;
+width: 95%;
+}
+
+#description{
+    text-align: justify;
+    padding: 20px;
+    position: relative;
+}
+
+}
+#a:hover{
+    color: rgb(0, 245, 82);
+    animation: menu 0.9s ease-in infinite;
+}
+
+@keyframes menu{0%{text-shadow: rgb(71, 130, 12) 0px 0px 1px;}50%{text-shadow: rgb(71, 130, 12) 0px 0px 6px;}100%{text-shadow: rgb(71, 130, 12) 0px 0px 1px;}}
+
+#title{
+    text-align: center;
+    font-family: font1;
+    padding: 20px;
+}
+
+#description{
+    font-family: sans-serif;
+    color: rgb(36, 36, 36);
+    text-align: center;
+
+
+}
+
+.content1{
+    border-bottom: #00000095 1px solid;
+    box-shadow: rgba(0, 0, 0, 0.337) 0px 5px 6px;
+    padding-bottom: 20px;
+}
+
+#ball1{
+    border: 5px solid rgb(130, 107, 107);
+}
+#ball2{
+    border: 5px solid rgb(84, 112, 84);
+}#ball3{
+    border: 5px solid rgb(95, 123, 118);
+}
+
+.ball{
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+    display:inline-block;
+    
+}
+
+.ball:hover{
+    position: relative;
+    transition: 3s;
+    animation: ani 1s ease infinite;
+}
+
+@keyframes ani{0%{top: 0px;}50%{top: -3px;}100%{top: 0px;}}
+
+.balls{
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.question{
+    width: 70%;
+    min-height: 130px;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 0px 1px 2px #ffffff;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.panel{
+    padding: 10px;
+}
+
+h5{
+    color: rgb(48, 48, 48);
+    font-size: 15px;
+    font-family: monospace;
+}
+
+#choices, option{
+    margin-top: 10px;
+    background-color: rgb(53, 56, 49);
+    color: rgb(179, 179, 179);
+    font-family: monospace;
+    padding: 5px;
+    border: none;
+    width: 160px;
+    text-align: center;
+}
+
+#inp-def{
+    background-color: rgb(250, 250, 250);
+    color: rgb(48, 48, 48);
+    font-family: monospace;
+    border: none;
+    padding: 5px;
+    width: 160px;
+    text-align: center;
+    border: #ffffff solid 5px;
+    border-radius: 60px;
+
+}
+
+#btn-send{
+    padding: 10px;
+    border: #47dfc6 solid 5px;
+    border-radius: 60px;
+    width: 140px;
+    height: 40px;
+    background-color: #47dfc6;
+    color: white;
+    font-family: Helvetica;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mark{
+    width: 90%;
+    height: 600px;
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+
+.btn{
+    width: 170px;
+    height: 50px;
+    position: relative;
+    margin-right: 20px;
+}
+
+#btn-1{
+    border: 2px solid #46dc52;
+    border-radius: 60px;
+    width: 170px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    position: relative;
+    text-align: left;
+    padding-left: 40px;
+    background-color: #46dc52;
+}
+
+.ico-btn{
+    width: 44px;
+    height: 44px;
+    border-radius: 60px;
+    border: 2.2px solid #334D5C;
+    background-color: #334D5C;
+    position: relative;
+    left: 120px;
+    top: -49px;
+    background-image: url(/img/svg/btn-1.svg);
+}
+
+
+#btn-2{
+    border: 2px solid #ba1f1f;
+    border-radius: 60px;
+    width: 170px;
+    height: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    position: relative;
+    text-align: left;
+    padding-left: 40px;
+    background-color: #ba1f1f;
+}
+
+.ico-btn-2{
+    width: 44px;
+    height: 44px;
+    border-radius: 60px;
+    border: 2.2px solid #45B39C;
+    background-color: #45B39C;
+    position: relative;
+    left: 120px;
+    top: -49px;
+    background-image: url(/img/svg/btn-2.svg);
+}
+
+
+
+#btn-2:hover{
+    border: 2px solid #c73636;
+    background-color: #c73636;
+    transition: 0.3s;
+
+}
+
+#btn-1:hover{
+    border: 2px solid #62e46d;
+    background-color: #62e46d;
+    transition: 0.3s;
+}
+
+button{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(152, 225, 155);
+    border-radius: 56px;
+    border: 2px solid rgb(152, 225, 155);
+}
+
+.badge{
+    font-size: 20px;
+    color: #ffffff;
+}
+
+h3{
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.question-2{
+    width: 70%;
+    min-height: 130px;
+    background-color: rgb(226, 226, 226);
+    box-shadow: 0px 0px 1px 2px #ffffff;
+    border-radius: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 60px rgb(65, 65, 65) solid;
+}
+
+#btn4:hover{
+    filter:hue-rotate(15deg);
+    animation: 0.8s ani2 ease-in infinite;
+    position: relative;
+}
+@keyframes ani2{0%{top: 0;}50%{top: 3px;}100%{top: 0;}}
+
+#btn4, #btn1, #btn2, #btn3, #btn5, button{
+    outline: 0;
+}
+
+#btn5{
+    width: 160px;
+    height: 50px;
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#btn5:hover{
+    background-color: brown;
+    border: brown 1px solid;
+}
+
+#btn5:active{
+    background-color: rgb(133, 35, 35) ;
+}
+
+.ck1{
+    width: 20px;
+    height: 20px;
+}
+
+.ck1:active{
+    filter: blur(2px);
+}
+
+.screen{
+    background-color: rgb(232, 31, 31);
+    height: 300px;
+    max-width: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.curve{
+    text-align: center;
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 294px;
+    background-color: rgb(225, 64, 64);
+    border: rgb(225, 64, 64) 3px solid;
+    z-index: 2;
+}
