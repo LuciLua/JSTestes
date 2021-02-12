@@ -7,6 +7,8 @@
     <title>Teste 2</title>
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href=".htaccess">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    
 </head>
 <body>
     <div class="cab">
@@ -33,40 +35,43 @@
 <div id="ball3" class="ball"></div>
 </div>
 </div>
-<div class="mark">
-    <div>
-            <p id="dev"> Devlop. Art. Tecnology.</p>
-    </div>
-
-    <div class="botoes">
-        <div class="btn">
-            <input type="button" id="btn-1" value="Notas">
-            <div class="ico-btn"></div>
-        </div>
-
-        <br>
-        <div class="btn">
-            <input type="button" id="btn-2" value="Drive">
-            <div class="ico-btn-2"></div>
-        </div>
-    </div>
+<br>
+<div class="question-2">
+    <h3>Gerador de random</h3>
+    <br>
+  <textarea name="" id="tex-2" cols="30" rows="10"></textarea>
+  <br>
+    <br><br>
 </div>
+<br>
+<br>
+<div class="div-cent">
+</div>
+<br>
+<h1>Conversor binario</h1>
+<br>
+<form action="" name="nade" id="disco">
+    <div class="in-out">
+    <input id="bin-dis" type="text" name="inpB" value="" onkeypress="return OnlyZorO(event)">
+    --->
+    <textarea name="out" id="out" cols="30" rows="10"></textarea>
+    </div>
+<br>
+<textarea name="out2" id="out2" cols="30" rows="10" placeholder="Saida" value=""></textarea>
+<br><br><br><br>
+<button type="button" id="btn7" onclick="bin()" value='' name="poxa">Binario discovery</button>
+<br><br>
+<br>
+</form>
+
 <br>
 
 <div class="screen">
+    <div class="curve"></div>
+
 <script src="js/index.js"></script>
 </div>
-<div class="question">
-    <br><br>
-    <h3>Hello! What your name?</h3>
-    <br>
-    <div class="panel">
-        <br>
-        <input type="text" placeholder="Your name" id="inp-def"></input>
-        <br><br>
-        <input type="button" value="Send" id="btn-send">
-    </div>
-</div>
+<br>
 </body>
 
 </html>

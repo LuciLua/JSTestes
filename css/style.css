@@ -103,13 +103,25 @@ width: 95%;
 }
 
 #ball1{
-    border: 5px solid rgb(130, 107, 107);
+    border: 10px solid rgb(130, 107, 107);
+    background-color: rgb(130, 107, 107);
+    animation: ball1-a 1.2s ease-in infinite;
+
 }
 #ball2{
-    border: 5px solid rgb(84, 112, 84);
+    border: 10px solid rgb(84, 112, 84);
+    background-color: rgb(84, 112, 84);
+    animation: ball2-a 1.2s ease-in infinite;
+
 }#ball3{
-    border: 5px solid rgb(95, 123, 118);
+    border: 10px solid rgb(95, 123, 118);
+    background-color: rgb(95, 123, 118);
+    animation: ball3-a 1.2s ease-in infinite;
+
 }
+@keyframes ball1-a{0%{top: 0;}10%{top: -1px;}20%{top: -2px;}30%{top: -3px;}40%{top: -2px;}50%{top: -1px;}60%{top: 0;}}
+@keyframes ball2-a{0%{top: 0;}10%{top: 0px;}20%{top: 0px;}30%{top: -1px;}40%{top: -2px;}50%{top: -3px;}60%{top: -2px;}70%{top: -1px;}80%{top: 0px;}}
+@keyframes ball3-a{0%{top: 0;}10%{top: 0px;}20%{top: 0px;}30%{top: 0px;}40%{top: 0px;}50%{top: 0px;}60%{top: -1px;}70%{top: -2px;}80%{top: -3px;}90%{top: -2px;}100%{top: -1px;}}
 
 .ball{
     width: 0px;
@@ -121,13 +133,12 @@ width: 95%;
     
 }
 
-.ball:hover{
+.ball{
     position: relative;
     transition: 3s;
     animation: ani 1s ease infinite;
 }
 
-@keyframes ani{0%{top: 0px;}50%{top: -3px;}100%{top: 0px;}}
 
 .balls{
     max-width: 200px;
@@ -159,16 +170,6 @@ h5{
     font-family: monospace;
 }
 
-#choices, option{
-    margin-top: 10px;
-    background-color: rgb(53, 56, 49);
-    color: rgb(179, 179, 179);
-    font-family: monospace;
-    padding: 5px;
-    border: none;
-    width: 160px;
-    text-align: center;
-}
 
 #inp-def{
     background-color: rgb(250, 250, 250);
@@ -180,6 +181,7 @@ h5{
     text-align: center;
     border: #ffffff solid 5px;
     border-radius: 60px;
+    outline: none;
 
 }
 
@@ -194,7 +196,20 @@ h5{
     font-family: Helvetica;
     font-weight: 600;
     text-align: center;
+    outline: none;
 }
+#btn-send:hover{
+
+    background-color: #34a18f;
+    border:solid 5px #34a18f;
+}
+
+#btn-send:active{
+
+    background-color: #43c0ab;
+    border:solid 5px #43c0ab;
+}
+
 
 .mark{
     height: 600px;
@@ -238,6 +253,7 @@ h5{
     text-align: left;
     padding-left: 40px;
     background-color: #46dc52;
+    outline: none;
 }
 
 .ico-btn{
@@ -266,6 +282,7 @@ h5{
     text-align: left;
     padding-left: 40px;
     background-color: #ba1f1f;
+    outline: none;
 }
 
 .ico-btn-2{
@@ -377,4 +394,89 @@ h3{
 
 .div-cent{
     text-align: center;
+}
+
+#btn7{
+    color: #ffffff;
+    font-family: font2;
+    border-radius: 10px;
+    width: 270px;
+    height: 60px;
+}
+
+#btn7:hover{
+    background-color: olivedrab;
+    border: olivedrab;
+    cursor: pointer;
+}
+
+#btn7:active{
+    background-color: rgb(72, 95, 25);
+    border: rgb(72, 95, 25);
+    cursor: pointer;
+}
+
+#bin-dis{
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+#disco{
+    text-align: center;
+}
+
+h1{
+    font-family: font2;
+    color: rgb(48, 48, 48);
+    text-align: center;
+}
+
+#out{
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    resize: none;
+    outline: none;
+    
+}
+
+#out2{
+    text-align: center;
+    width: 250px;
+    height: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    font-family: font2;
+    outline: none;
+    resize: none;
+    border: none;
+    
+}
+
+textarea{
+    width: 250px;
+    height: 55px;
+    position: relative;
+    top: 25px;
+}
+
+.in-out{
+    position: relative;
+    text-align: center;
+    padding-right: 20px;
+}
+
+#tex-2{
+    max-width: 90%;
+    min-width: 90%;
+    max-height: 400px;
+    min-height: 100px;
+    position: relative;
+    padding: 20px;
 }
