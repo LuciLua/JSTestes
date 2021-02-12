@@ -18,8 +18,9 @@ body{
     box-shadow: black 0px 0px 10px;
     margin: 0px;
     padding: 0;
-    border: 0;
-    position: relative;
+    border: none;
+    position: fixed;
+    z-index: 10;
 }
 
 .menu{
@@ -51,6 +52,10 @@ body{
     margin-left: 60px;
 }
 
+.menu-i{
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
     
 .menu-op, #a{
@@ -60,6 +65,13 @@ margin-left: 6px;
 text-align: center;
 
 text-align: center;
+display: none;
+}
+
+.menu-i{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
 }
 
 .menu{
@@ -68,10 +80,12 @@ top: 15px;
 width: 95%;
 }
 
+
 #description{
     text-align: justify;
     padding: 20px;
     position: relative;
+
 }
 
 }
@@ -85,14 +99,16 @@ width: 95%;
 #title{
     text-align: center;
     font-family: font1;
-    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 30px;
 }
 
 #description{
     font-family: sans-serif;
     color: rgb(36, 36, 36);
     text-align: center;
-
+    padding-left: 50px;
+    padding-right: 50px;
 
 }
 
@@ -103,14 +119,14 @@ width: 95%;
 }
 
 #ball1{
-    border: 10px solid rgb(130, 107, 107);
-    background-color: rgb(130, 107, 107);
+    border: 10px solid rgb(112, 94, 94);
+    background-color: rgb(112, 94, 94);
     animation: ball1-a 1.2s ease-in infinite;
 
 }
 #ball2{
-    border: 10px solid rgb(84, 112, 84);
-    background-color: rgb(84, 112, 84);
+    border: 10px solid rgb(93, 107, 99);
+    background-color: rgb(93, 107, 99);
     animation: ball2-a 1.2s ease-in infinite;
 
 }#ball3{
@@ -130,15 +146,11 @@ width: 95%;
     margin-left: 10px;
     margin-top: 20px;
     display:inline-block;
-    
-}
-
-.ball{
     position: relative;
     transition: 3s;
     animation: ani 1s ease infinite;
+    
 }
-
 
 .balls{
     max-width: 200px;
@@ -226,6 +238,8 @@ h5{
 .botoes{
     position: relative;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #dev{
@@ -379,6 +393,7 @@ h3{
     max-width: 100%;
     z-index: 1;
     position: relative;
+    padding: 50px;
 }
 
 #btn6{
